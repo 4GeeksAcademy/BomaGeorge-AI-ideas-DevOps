@@ -1,0 +1,138 @@
+# Implementation Plan � AI Usage Guide
+
+This document serves as a **living implementation record** for the project.  
+It defines all planned and completed features, milestones, and technical steps required to reach and evolve the MVP.
+
+---
+
+## ?? AI Interaction Rules
+
+1. **Always read this file before beginning any new feature or code change.**  
+   Use it to understand what features exist, their current status, and dependencies.
+
+2. **When adding a new feature:**
+   - Duplicate the �Feature Implementation Plan Model� shown below.  
+   - Replace all placeholder fields (`[Feature Name]`, etc.) with real details.  
+   - Insert the new feature under the appropriate section (MVP, Post-MVP, or Other).  
+   - Maintain consistent formatting.
+
+3. **When updating progress:**
+   - Update the **Status** field.  
+   - Check off relevant items in **Implementation Steps** and **Acceptance Criteria**.  
+   - Update the **Last Updated** date.  
+   - If implementation details evolve, expand the �Technical Breakdown� or �Testing Notes.�
+
+4. **When completing a major milestone (e.g., MVP deployment):**
+   - Add a short summary entry at the bottom under �Development Notes� describing what changed or was achieved.
+
+5. **Do not delete or overwrite past feature sections.**
+   - Instead, mark them as �Complete� and update the timestamp.
+   - This document should reflect a chronological record of development history.
+
+---
+
+## ?? Feature Implementation Plan Model
+
+Use this exact structure when creating or updating feature entries.
+
+### Example Template
+
+## Feature: [Feature Name]
+
+**Purpose:**  
+_Describe the intent and reason for this feature._
+
+**User Story / Use Case:**  
+_As a [user type], I want to [perform an action] so that I can [achieve benefit]._
+
+**Dependencies / Prerequisites:**  
+_List related systems, APIs, libraries, or other features required before this one can function._
+
+**Technical Breakdown:**  
+- _Frontend components/pages to build_  
+- _Backend endpoints or database tables needed_  
+- _Key logic or architectural notes_  
+
+**Implementation Steps:**  
+- [ ] Step 1: _Define or set up structure_  
+- [ ] Step 2: _Build primary functionality_  
+- [ ] Step 3: _Integrate with data sources or APIs_  
+- [ ] Step 4: _Add validations/tests_  
+- [ ] Step 5: _UI/UX refinements_
+
+**Acceptance Criteria:**  
+- [ ] _Feature works as intended_  
+- [ ] _No errors in console/build_  
+- [ ] _Responsive layout verified_  
+- [ ] _Feature integrated with related systems_
+
+**Testing & Validation Notes:**  
+_Specify how to test functionality and what tools to use._
+
+**Post-Implementation Actions:**  
+_Follow-ups such as documentation, styling, or refactoring._
+
+**Status:** Not Started / In Progress / Blocked / Complete  
+**Last Updated:** YYYY-MM-DD
+
+---
+
+# ?? Implementation Sections
+
+Below are the main phases of implementation.  
+Each section contains **reserved space** where the AI (or a developer) should insert detailed feature entries using the model above.
+
+---
+
+## ?? MVP Features
+> _Core functionalities required to achieve a Minimum Viable Product._
+
+<!--
+    Insert feature implementation plans for all MVP-level features here.
+    Each feature entry should follow the Feature Implementation Plan Model.
+-->
+
+
+
+---
+
+## ?? Post-MVP Enhancements
+> _Additional features, polish, and quality-of-life improvements planned after MVP deployment._
+
+<!--
+    Insert Post-MVP feature implementation plans here.
+-->
+
+
+
+---
+
+## ?? Experimental / Optional Features
+> _Experimental or stretch features for exploration or testing._
+
+<!--
+    Insert optional or experimental features here.
+-->
+
+
+
+---
+
+## ?? Deployment & Integration Tasks
+> _Steps for hosting, MCP setup, and production pipeline configuration._
+
+<!--
+    Insert deployment or infrastructure-related feature entries here.
+-->
+
+
+
+---
+
+## ?? Development Notes
+> _Chronological updates, milestones, or reflection logs (AI or developer-written)._
+
+<!--
+    Use this section to summarize development sessions, bug fixes, or major updates.
+    Example: "2025-10-10 � Completed MVP login flow; integrated Supabase + Clerk."
+-->
