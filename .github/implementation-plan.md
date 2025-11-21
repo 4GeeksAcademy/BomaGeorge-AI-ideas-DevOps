@@ -101,10 +101,10 @@ CI/CD webhooks (GitHub Actions/GitLab/ArgoCD) delivering deployment events; Supa
 - Integrations: CI/CD webhooks to record events; optional CLI/endpoint to trigger deploys.
 
 **Implementation Steps:**  
-- [ ] Define Supabase schema (deployments, environments, versions, audit).  
-- [ ] Implement webhook ingestion and background job to update deployment status.  
-- [ ] Build deployment trigger API and rollback API with confirmations/guards.  
-- [ ] Implement UI: dashboard with history, environment status, rollback controls; live updates via Realtime.  
+- [x] Define Supabase schema (deployments, environments, versions, audit).  
+- [x] Implement webhook ingestion and background job to update deployment status.  
+- [x] Build deployment trigger API and rollback API with confirmations/guards.  
+- [x] Implement UI: dashboard with history, environment status, rollback controls; live updates via Realtime.  
 - [ ] Add validation/tests for happy/failure paths and rollback behavior.  
 - [ ] Polish UX: status badges, toasts, error surfacing.
 
@@ -121,7 +121,7 @@ Mock CI/CD webhooks to simulate success/failure; API tests for deploy/rollback; 
 **Post-Implementation Actions:**  
 Document webhook setup; add RBAC; export audit logs; add safety throttles and rate limits.
 
-**Status:** Not Started  
+**Status:** In Progress  
 **Last Updated:** 2025-11-19
 
 ---
@@ -145,10 +145,10 @@ Metrics source (Prometheus/OpenTelemetry); logs source (OpenSearch/Elastic); Sup
 - Integrations: Prometheus/OTel for metrics; OpenSearch/Elastic for log snippets.
 
 **Implementation Steps:**  
-- [ ] Define Supabase schema (components, slis, alerts).  
+- [x] Define Supabase schema (components, slis, alerts).  
 - [ ] Implement metrics/logs integration adapters and health computation.  
-- [ ] Build alert ingestion (webhook/poller) and persistence.  
-- [ ] Implement UI: health grid, component detail with metrics/logs, SLI/SLO display, alert feed with acknowledge/escalate actions.  
+- [x] Build alert ingestion (webhook/poller) and persistence.  
+- [x] Implement UI: health grid, component detail with metrics/logs, SLI/SLO display, alert feed with acknowledge/escalate actions.  
 - [ ] Add tests for status calculation, SLI threshold handling, alert ordering, UI states.  
 - [ ] Polish UX: filters, severity colors, loading/empty/error states.
 
@@ -165,7 +165,7 @@ Use mocked metrics/log data for deterministic tests; unit tests for status and S
 **Post-Implementation Actions:**  
 Add paging/filters; integrate notification channels (Slack/Email); add RBAC; trend charts for SLO burn rate.
 
-**Status:** Not Started  
+**Status:** In Progress  
 **Last Updated:** 2025-11-19
 
 ---
@@ -204,3 +204,8 @@ Steps for hosting and production pipeline configuration.
 Chronological updates, milestones, or reflection logs (AI or developer-written).
 
 - 2025-11-19 - Defined MVP scope for Deployment & Rollback Manager and Infrastructure Health Dashboard; selected Next.js + Supabase (DB/Auth/Realtime) + Vercel hosting; metrics/log ingestion via Prometheus/OTel and OpenSearch/Elastic.
+- 2025-11-19 - Added Supabase schema (supabase/schema.sql) covering deployments, environments, versions, audit, components, SLI targets, alerts, and health snapshots.
+- 2025-11-19 - Implemented deployment API surface (trigger, status updates, rollback), webhook ingestion worker stub, Supabase Realtime hooks, and UI placeholders for deployment history and alert feed; added alert ingestion/ack/resolve helpers.
+- 2025-11-19 - Wired initial data fetching for deployments/alerts, added API routes for list/ack/resolve/rollback/trigger, added Realtime-backed dashboard and alert feed controls, stubbed metrics/log adapters and health scoring helper.
+- 2025-11-19 - Added environment status UI with rollback confirmation, public data fetchers, validators, API error handling, Prometheus/log adapter stubs with health scoring, and basic healthStatus test script.
+- 2025-11-19 - Added deployment guide for Vercel + Supabase envs, improved UI status badges and rollback confirms, integrated Prometheus/log endpoints with token support, and added validator/health test scripts.
